@@ -25,13 +25,22 @@ const specificStories = [
     date: "2022-03-02",
     newsOutlet: "Side Effects Public Media",
   },
+  {
+    title: "Preserving cultural diversity in Afghanistan ",
+    image: su2,
+    description:
+      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quibusdam. ",
+    journalist: "Omid Sobhani",
+    date: "2022-03-02",
+    newsOutlet: "Side Effects Public Media",
+  },
 ];
 
 const Education = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const { id } = useParams();
-  const jobsPerPage = 3;
+  const jobsPerPage = 2;
   //const totalPages = 4;
   const totalPages = Math.ceil(specificStories?.length / jobsPerPage);
   const pageNumbers = [];
@@ -191,41 +200,43 @@ const Education = () => {
         </div>
       </div>
       <div className={classes.bottomEducation}>
-        {specificStories.map((story, index) => (
-          <div key={index} className={classes.singleEducation}>
-            <Link
-              style={{ textDecoration: "none", color: "inherit" }}
-              to={`/stories/${id}/content/${index}`}
-            >
-              <div className={classes.storySpan}>
-                <span>Story</span>
-              </div>
-              <div className={classes.singleTitle}>
-                <h3>{story.title}</h3>
-              </div>
-              <div className={classes.educationImg}>
-                <img src={story.image} alt="Dancer" />
-              </div>
-              <div className={classes.belowSingleImg}>
-                <p>{story.description}</p>
-              </div>
-              <div className={classes.footerSingle}>
-                <div className={classes.journalist}>
-                  <p>JOURNALIST</p>
-                  <span>{story.journalist}</span>
+        {specificStories
+          .slice((currentPage - 1) * jobsPerPage, currentPage * jobsPerPage)
+          .map((story, index) => (
+            <div key={index} className={classes.singleEducation}>
+              <Link
+                style={{ textDecoration: "none", color: "inherit" }}
+                to={`/stories/${id}/content/${index}`}
+              >
+                <div className={classes.storySpan}>
+                  <span>Story</span>
                 </div>
-                <div className={classes.date}>
-                  <p>DATE</p>
-                  <span>{story.date}</span>
+                <div className={classes.singleTitle}>
+                  <h3>{story.title}</h3>
                 </div>
-                <div className={classes.outlet}>
-                  <p>NEWS OUTLET</p>
-                  <span>{story.newsOutlet}</span>
+                <div className={classes.educationImg}>
+                  <img src={story.image} alt="Dancer" />
                 </div>
-              </div>
-            </Link>
-          </div>
-        ))}
+                <div className={classes.belowSingleImg}>
+                  <p>{story.description}</p>
+                </div>
+                <div className={classes.footerSingle}>
+                  <div className={classes.journalist}>
+                    <p>JOURNALIST</p>
+                    <span>{story.journalist}</span>
+                  </div>
+                  <div className={classes.date}>
+                    <p>DATE</p>
+                    <span>{story.date}</span>
+                  </div>
+                  <div className={classes.outlet}>
+                    <p>NEWS OUTLET</p>
+                    <span>{story.newsOutlet}</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
       </div>
       <div className={classes.pagination}>
         <div className="col-md-6 text-center text-md-left mb-4 mb-md-0"></div>
@@ -248,10 +259,11 @@ const Education = () => {
                 <a
                   key={pageNumber}
                   href="#"
-                  className={pageNumber === currentPage ? "active" : ""}
+                  className={
+                    pageNumber === currentPage ? `${classes.active}` : ""
+                  }
                   onClick={(e) => {
                     e.preventDefault();
-                    if (currentPage === totalPages) return;
                     handleClick(pageNumber);
                   }}
                 >
@@ -264,6 +276,7 @@ const Education = () => {
               className={classes.next}
               onClick={(e) => {
                 e.preventDefault();
+                if (currentPage === totalPages) return;
                 handleClick(currentPage + 1);
               }}
               disabled={currentPage === totalPages}

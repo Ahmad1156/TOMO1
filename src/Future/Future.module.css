@@ -36,7 +36,6 @@
   height: 450px;
   overflow-y: scroll;
   overflow-x: hidden;
-  margin-top: 0 !important;
 }
 .paragraphs::-webkit-scrollbar {
   width: 10px;
@@ -52,7 +51,10 @@
 .parag1 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
-  margin: 20px 0;
+}
+
+.parag1 {
+  height: 450px;
 }
 
 .subTitle {
@@ -60,17 +62,6 @@
   margin: 0 auto;
 }
 
-.parag2 p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  margin: 20px 0;
-  margin-bottom: 20px;
-}
-.parag3 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  margin: 20px 0;
-}
 .readMore {
   display: block;
   margin: 0 auto;

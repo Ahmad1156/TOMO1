@@ -41,6 +41,15 @@ const cards = [
     footerMiddle: "Steps toward a better tomorrow",
     footerEnd: " hosted in afghanistan.2050-05-07",
   },
+  {
+    title: "Afghanistan: The dream of girls education.",
+    description: "  Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    image: afghan,
+    type: "education",
+    footerFirst: "Hii all",
+    footerMiddle: "Steps toward a better tomorrow",
+    footerEnd: " hosted in afghanistan.2050-05-07",
+  },
 ];
 
 const Imaginary = () => {
@@ -61,7 +70,7 @@ const Imaginary = () => {
 
   useEffect(() => {
     window.scroll(0, 0);
-  },[]);
+  }, []);
   return (
     <div className={classes.banner}>
       <div className={classes.bannerHeader}>
@@ -201,23 +210,25 @@ const Imaginary = () => {
         </div>
         <div className={classes.content}>
           <div className={classes.cards}>
-            {cards.map((card, i) => (
-              <Link
-                style={{ textDecoration: "none", color: "inherit" }}
-                to={`/imaginary/artifact/${i}`}
-              >
-                <Card1
-                  key={i}
-                  title={card.title}
-                  description={card.description}
-                  image={card.image}
-                  type={card.type}
-                  footerFirst={card.footerFirst}
-                  footerSecond={card.footerMiddle}
-                  footerThird={card.footerEnd}
-                />
-              </Link>
-            ))}
+            {cards
+              .slice((currentPage - 1) * jobsPerPage, currentPage * jobsPerPage)
+              .map((card, i) => (
+                <Link
+                  style={{ textDecoration: "none", color: "inherit" }}
+                  to={`/imaginary/artifact/${i}`}
+                >
+                  <Card1
+                    key={i}
+                    title={card.title}
+                    description={card.description}
+                    image={card.image}
+                    type={card.type}
+                    footerFirst={card.footerFirst}
+                    footerSecond={card.footerMiddle}
+                    footerThird={card.footerEnd}
+                  />
+                </Link>
+              ))}
           </div>
           <div className={classes.pagination}>
             <div className="col-md-5 text-center text-md-left mb-4 mb-md-0"></div>
@@ -240,10 +251,11 @@ const Imaginary = () => {
                     <a
                       key={pageNumber}
                       href="#"
-                      className={pageNumber === currentPage ? "active" : ""}
+                      className={
+                        pageNumber === currentPage ? classes.active : ""
+                      }
                       onClick={(e) => {
                         e.preventDefault();
-                        if (currentPage === totalPages) return;
                         handleClick(pageNumber);
                       }}
                     >
@@ -256,6 +268,7 @@ const Imaginary = () => {
                   className={classes.next}
                   onClick={(e) => {
                     e.preventDefault();
+                    if (currentPage === totalPages) return;
                     handleClick(currentPage + 1);
                   }}
                   disabled={currentPage === totalPages}

@@ -78,7 +78,7 @@ const Future = () => {
             <b>Title</b>
           </h4>
         </div>
-        <div className={classes.paragraphs} style={{ marginTop: "150px" }}>
+        <div className={classes.paragraphs} style={{ marginTop: "10px" }}>
           <div className={classes.parag1}>
             <p>
               {" "}
@@ -89,30 +89,108 @@ const Future = () => {
               ipsum dolor sit, amet consectetur adipisicing elit. Nisi
               consequuntur assumenda cupiditate culpa sapiente voluptas,
               obcaecati suscipit tempora architecto. Nemo nam enim accusantium
-              iure velit similique esse laborum quibusdam voluptatum.
-            </p>
-          </div>
-          <div className={classes.parag2}>
-            <p>
-              {" "}
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
               consequuntur assumenda cupiditate culpa sapiente voluptas,
               obcaecati suscipit tempora architecto. Nemo nam enim accusantium
               iure velit similique esse laborum quibusdam voluptatum. Lorem
               ipsum dolor sit, amet consectetur adipisicing elit. Nisi
               consequuntur assumenda cupiditate culpa sapiente voluptas,
               obcaecati suscipit tempora architecto. Nemo nam enim accusantium
-              iure velit similique esse laborum quibusdam voluptatum.
-            </p>
-          </div>
-          <div className={classes.parag3}>
-            <p>
-              {" "}
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
               consequuntur assumenda cupiditate culpa sapiente voluptas,
               obcaecati suscipit tempora architecto. Nemo nam enim accusantium
               iure velit similique esse laborum quibusdam voluptatum. Lorem
-              ipsum dolor sit, amet consectetur adipisicing elit.
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              consequuntur assumenda cupiditate culpa sapiente voluptas,
+              obcaecati suscipit tempora architecto. Nemo nam enim accusantium
+              iure velit similique esse laborum quibusdam voluptatum. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Nisi
             </p>
           </div>
         </div>

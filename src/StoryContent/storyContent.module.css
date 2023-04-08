@@ -86,7 +86,6 @@
   font-size: 20px;
 }
 .parag1 {
-  margin-top: 50px;
   height: 300px;
 }
 
@@ -416,7 +415,6 @@
     align-items: center;
     justify-content: center;
     width: 400px;
-    margin-left: 30px;
   }
   .commentInfo {
     padding: 1.5%;
