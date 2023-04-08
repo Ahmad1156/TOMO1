@@ -1,0 +1,121 @@
+.methodologyContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bannerMethodology {
+  padding: 30px;
+  margin: 0 auto;
+}
+.bannerMethodology img {
+  max-width: 100%;
+  width: 1200px;
+}
+.SecondStep {
+  width: 80%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.firstStep {
+  margin-top: 5%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.firstImg img {
+  width: 280px;
+  height: 260px;
+  border-radius: 10px;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  height: 300px;
+}
+.title h2 {
+  color: rgb(34, 71, 115);
+  font-weight: bold;
+}
+.underTitle {
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.beforeFooter {
+  display: flex;
+  justify-content: start;
+  width: 80%;
+  font-size: 30px;
+  text-align: left;
+  margin-top: 5%;
+  margin: 0 auto;
+}
+.buttonStory {
+  padding: 5%;
+}
+.buttonStory button {
+  border: none;
+  width: 120%;
+  padding: 4%;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: rgb(11, 84, 170);
+}
+
+@media screen and (max-width: 768px) {
+  .firstStep {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bannerMethodology {
+    padding: 10px;
+  }
+  .SecondStep {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .firstImg img {
+    width: 95%;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  .right {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .beforeFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .beforeFooter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1037px) {
+  .firstStep {
+    width: 90%;
+    gap: 20px;
+  }
+  .SecondStep {
+    width: 90%;
+    gap: 20px;
+  }
+}
